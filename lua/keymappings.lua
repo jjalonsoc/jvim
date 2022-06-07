@@ -24,6 +24,7 @@ vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true, silent = true })
 
 -- Enter also sets no highlighning
 vim.api.nvim_set_keymap("n", "<CR>", ":noh<CR><CR>", { noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", ",d", ":b#<bar>bd#<CR>", { noremap = true, silent = true})
 
 -- inside of terminal emulator esc allows editing outputs
 vim.api.nvim_set_keymap('t', '<ESC>', [[<C-\><C-n>]], { noremap = true })
